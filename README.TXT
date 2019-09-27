@@ -29,5 +29,5 @@ What to Do When I Die:
         
 Rules:
     1. Don't tamper with any files
-    2. Do not mess with any code! You may look at it but if you accidentaly 
-
+    2. Do not mess with any code! You may look at it but if you accidentaly mess it up press Ctrl + z to undo any change you made
+    3. If you do find any bugs or glitches please let me know so that I may fix them
