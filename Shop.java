@@ -66,31 +66,31 @@ public class Shop implements ActionListener
         b11.setBounds(20,120,100,50);
         b11.setEnabled(false);
 
-        b12 = new JButton("500 Points");//Blue
+        b12 = new JButton("1000 Points");//Blue
         b12.setBounds(130,120,100,50);
         b12.addActionListener(this);
         b12.setActionCommand("BlueP");
         if(Integer.parseInt((SavedColors + "").substring(1,2)) == 1) { b12.setEnabled(false); b12.setText("Purchased"); b2.setEnabled(true);}
 
-        b13 = new JButton("500 Points");//Yellow
+        b13 = new JButton("1000 Points");//Yellow
         b13.setBounds(240,120,100,50);
         b13.addActionListener(this);
         b13.setActionCommand("YellowP");
         if(Integer.parseInt((SavedColors + "").substring(2,3)) == 1) { b13.setEnabled(false); b13.setText("Purchased"); b3.setEnabled(true);}
 
-        b14 = new JButton("500 Points");//Orange
+        b14 = new JButton("1000 Points");//Orange
         b14.setBounds(350,120,100,50);
         b14.addActionListener(this);
         b14.setActionCommand("OrangeP");
         if(Integer.parseInt((SavedColors + "").substring(3,4)) == 1) { b14.setEnabled(false); b14.setText("Purchased"); b4.setEnabled(true);}
 
-        b15 = new JButton("500 Points");//Pink
+        b15 = new JButton("1000 Points");//Pink
         b15.setBounds(460,120,100,50);
         b15.addActionListener(this);
         b15.setActionCommand("PinkP");
         if(Integer.parseInt((SavedColors + "").substring(4,5)) == 1) { b15.setEnabled(false); b15.setText("Purchased"); b5.setEnabled(true);}
 
-        b16 = new JButton("1000 Points");//White
+        b16 = new JButton("1500 Points");//White
         b16.setBounds(570,120,100,50);
         b16.addActionListener(this);
         b16.setActionCommand("WhiteP");
@@ -114,11 +114,11 @@ public class Shop implements ActionListener
         if(e.getActionCommand().equalsIgnoreCase("pinks")) {f.setVisible(false);Start startTest = new Start();startTest.runStart("pink");}
         if(e.getActionCommand().equalsIgnoreCase("whites")) {f.setVisible(false);Start startTest = new Start();startTest.runStart("white");}
 
-        if(e.getActionCommand().equalsIgnoreCase("bluep")) { if(Points >= 500) {SavedColors +=10000; b2.setEnabled(true); b12.setEnabled(false); Points -= 500; b0.setText(Points + "");}}
-        if(e.getActionCommand().equalsIgnoreCase("yellowp")) { if(Points >= 500) {SavedColors +=1000; b3.setEnabled(true); b13.setEnabled(false); Points -= 500; b0.setText(Points + "");}}
-        if(e.getActionCommand().equalsIgnoreCase("orangep")) { if(Points >= 500) {SavedColors +=100; b4.setEnabled(true); b14.setEnabled(false); Points -= 500; b0.setText(Points + "");}}
-        if(e.getActionCommand().equalsIgnoreCase("pinkp")) { if(Points >= 500) {SavedColors +=10; b5.setEnabled(true); b15.setEnabled(false); Points -= 500; b0.setText(Points + "");}}
-        if(e.getActionCommand().equalsIgnoreCase("whitep")) { if(Points >= 1000) {SavedColors +=1; b6.setEnabled(true); b16.setEnabled(false); Points -= 1000; b0.setText(Points + "");}}
+        if(e.getActionCommand().equalsIgnoreCase("bluep")) { if(Points >= 1000) {SavedColors +=10000; b2.setEnabled(true); b12.setEnabled(false); Points -= 1000; b0.setText(Points + "");}}
+        if(e.getActionCommand().equalsIgnoreCase("yellowp")) { if(Points >= 1000) {SavedColors +=1000; b3.setEnabled(true); b13.setEnabled(false); Points -= 1000; b0.setText(Points + "");}}
+        if(e.getActionCommand().equalsIgnoreCase("orangep")) { if(Points >= 1000) {SavedColors +=100; b4.setEnabled(true); b14.setEnabled(false); Points -= 1000; b0.setText(Points + "");}}
+        if(e.getActionCommand().equalsIgnoreCase("pinkp")) { if(Points >= 1000) {SavedColors +=10; b5.setEnabled(true); b15.setEnabled(false); Points -= 1000; b0.setText(Points + "");}}
+        if(e.getActionCommand().equalsIgnoreCase("whitep")) { if(Points >= 1500) {SavedColors +=1; b6.setEnabled(true); b16.setEnabled(false); Points -= 1500; b0.setText(Points + "");}}
 
         if(e.getActionCommand().substring(e.getActionCommand().length() - 1).equalsIgnoreCase("p")) {
             try{
